@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo MSF</title>
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="assets/payoo.png" type="image/x-icon">
+    <!-- Tailwind & Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+    <!-- Styles -->
+     <style>
+        .font-outfit{
+            font-family: Outfit;
+        }
+
+        input[type="number"]::-webkit-inner-spin-button{
+            display: none;
+        }
+
+        input:focus{
+            outline: none;
+        }
+     </style>
+</head>
+<body class="min-h-screen min-w-screen font-outfit flex justify-center items-center bg-[#f5f6f7]">
+    <main>
+        <form action="#">
+            <div class="flex justify-center w-[402px]">
+                <img src="assets/payoo.png" alt="Payoo" class="w-[30%]">
+            </div>
+            <div class="bg-white w-[402px] h-[317px] flex justify-center items-center flex-col gap-4 rounded-3xl">
+                <div class="flex justify-start flex-col gap-[12px]">
+                    <h3 class="text-[16px] font-medium">Mobile Number</h3>
+                    <input id="mobile-number" class="bg-[#f5f6f7] rounded-[32px] h-[52px] p-[20px] w-[338px] text-[16px] font-light text-black" placeholder="Enter your number" type="number" required>
+                </div>
+                <div class="flex justify-start flex-col gap-[12px]">
+                    <h3 class="text-[16px] font-medium">4 Digit Pin</h3>
+                    <input id="digit-pin" class="bg-[#f5f6f7] rounded-[32px] h-[52px] p-[20px] w-[338px] text-[16px] font-light text-black" placeholder="Enter 4 Digit Pin" type="number" required>
+                </div>
+                <div>
+                    <button id="login" type="submit" class="bg-[#0775f2] rounded-[32px] h-[52px] p-[20px] w-[338px] text-[20px] font-semibold justify-center text-[white] items-center flex">Login</button>
+                </div>
+            </div>
+        </form>
+        <!-- Modal -->
+        <dialog id="my_modal_1" class="modal w-screen">
+            <div class="modal-box">
+                <div class="flex flex-row gap-2 items-center">
+                    <svg class="w-[32px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#dc5656" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                    <h3 class="text-lg font-medium">Sorry an error occurred</h3>
+                </div>
+                <p class="py-4 font-light">Please enter a valid mobile number and PIN, then try again.</p>
+                <div class="modal-action">
+                <form method="dialog">
+                <button class="btn">Close</button>
+                </form>
+                </div>
+            </div>
+        </dialog>
+    </main>
+    <!-- Script -->
+    <script src="assets/script/login.js"></script>
+</body>
+</html>

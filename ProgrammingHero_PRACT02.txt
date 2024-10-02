@@ -1,2 +1,2 @@
-[Live Website] → https://rushberry.github.io/ProgrammingHero_PRACT01/
-[Github Repo] → https://github.com/Rushberry/ProgrammingHero_PRACT01
+[Live Website] → https://rushberry.github.io/ProgrammingHero_PRACT02/
+[Github Repo] → https://github.com/Rushberry/ProgrammingHero_PRACT02
